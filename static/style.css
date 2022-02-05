@@ -1,24 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 .banner{
     background-image: linear-gradient(to bottom right, #75b1d4, #00649e);
-    height: 300px;
+    height: 250px;
     text-align: center;
     padding: 50px;
+    margin-bottom: 25px;
 }
 
 .homeName{
-    font-family: 'Supermercado One', cursive;
+    font-family: 'Supermercado One';
     font-size: 52px;
     color: #ddd;
     margin: 25px;
+    
 }
 
 .homeIntro{
     font-family: 'Open Sans';
-    font-weight: bold;
+    font-weight: bolder;
     color: #ddd;
     margin: 25px;
+    font-size: 25px;
+}
+
+.autobiography{
+    font-family: 'Roboto Mono';
+    font-size: 30px;
+    color: #00649e;
+    font-weight: bold;
+}
+
+.mainPage{
+    text-align: justify;
+    font-family: 'Noto Sans';
+    line-height: 30px;
 }
 
