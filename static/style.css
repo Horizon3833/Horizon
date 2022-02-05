@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+.banner{
+    background-image: linear-gradient(to bottom right, #75b1d4, #00649e);
+    height: 300px;
+    text-align: center;
+    padding: 50px;
+}
+
+.homeName{
+    font-family: 'Supermercado One', cursive;
+    font-size: 52px;
+    color: #ddd;
+    margin: 25px;
+}
+
+.homeIntro{
+    font-family: 'Open Sans';
+    font-weight: bold;
+    color: #ddd;
+    margin: 25px;
+}
+
