@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="/static/style.css">
     <link rel="icon" href="/static/icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,12 @@
 </head>
 <body>
 
-    <div class="banner">
+    <div style="background-image: linear-gradient(to bottom right, #75b1d4, #00649e);
+    height: 250px;
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 25px;
+    cursor: default;">
         <span class="homeName">Horizon</span>
         <p class="homeIntro">Hello I am Horizon.  I am a passionate 15 year old Java developer.</p>
     </div>
@@ -25,20 +31,73 @@
 
     <span class="heading">Extensions</span>
     <br>
-    <div class="extensionsContent">
 
-        <span class="extensionName" id="tictactoe">1. TicTacToe Extension <span class="material-icons-outlined">open_in_new</span></span><br>
-        <span class="extensionName" id="text">2. TextEditor Extension <span class="material-icons-outlined">open_in_new</span></span><br>
-        <span class="extensionName" id="qrcode">3. QRCodeGenerator Extension <span class="material-icons-outlined">open_in_new</span></span><br>
-        <span class="extensionName" id="colorbar">4. ColorSeekbar Extension <span class="material-icons-outlined">open_in_new</span></span><br>
-        <span class="extensionName" id="distance">5. DistanceFinder Extension <span class="material-icons-outlined">open_in_new</span></span><br>
-    
-    </div>
-
-    <br>
-    <hr><hr><br>
-    
-    <span class="contactBtn">Contact Me</span>
+        
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          
+          <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/3 md:w-1/2 p-4">
+              <div class="border border-gray-200 p-6 rounded-lg" id="tictactoe" style="cursor: pointer;">
+                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                  </svg>
+                </div>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">TicTacToe</h2>
+                <p class="leading-relaxed text-base">Use this extension for integrating TicTacToe in your application</p>
+              </div>
+            </div>
+            <div class="xl:w-1/3 md:w-1/2 p-4">
+              <div class="border border-gray-200 p-6 rounded-lg" id="colorbar" style="cursor:pointer;">
+                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                    <circle cx="6" cy="6" r="3"></circle>
+                    <circle cx="6" cy="18" r="3"></circle>
+                    <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                  </svg>
+                </div>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">ColorSeekbar</h2>
+                <p class="leading-relaxed text-base">Use this extension for adding horizontal color picker in your application</p>
+              </div>
+            </div>
+            <div class="xl:w-1/3 md:w-1/2 p-4">
+              <div class="border border-gray-200 p-6 rounded-lg" id="text" style="cursor: pointer;">
+                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                </div>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">TextEditor</h2>
+                <p class="leading-relaxed text-base">Use this extension for making stylish text in your application</p>
+              </div>
+            </div>
+            <div class="xl:w-1/3 md:w-1/2 p-4" style="margin-left: auto;">
+              <div class="border border-gray-200 p-6 rounded-lg" id="qrcode" style="cursor: pointer;">
+                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                    <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"></path>
+                  </svg>
+                </div>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">QR Code Generator</h2>
+                <p class="leading-relaxed text-base">You can use this extension for generating QR code in your application</p>
+              </div>
+            </div>
+            <div class="xl:w-1/3 md:w-1/2 p-4" style="margin-right: auto;">
+              <div class="border border-gray-200 p-6 rounded-lg" id="distance" style="cursor: pointer;">
+                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                  </svg>
+                </div>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">DistanceFinder</h2>
+                <p class="leading-relaxed text-base">You can calculate the distance bewteen 2 places using this extension</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     
     <br><br>
     <hr style="color: #ddd;">

@@ -16,14 +16,7 @@ body{
     cursor: default;
 }
 
-.banner{
-    background-image: linear-gradient(to bottom right, #75b1d4, #00649e);
-    height: 250px;
-    text-align: center;
-    padding: 50px;
-    margin-bottom: 25px;
-    cursor: default;
-}
+
 
 .homeName{
     font-family: 'Supermercado One';
