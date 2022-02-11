@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="/static/style.css">
     <link rel="icon" href="/static/icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +16,7 @@
         <p class="homeIntro">Hello I am Horizon.  I am a passionate 15 year old Java developer.</p>
     </div>
 
-    <span class="autobiography">Autobiography</span>
+    <span class="heading">Autobiography</span>
     <div class="mainPage">
         <p>Since childhood, I had a huge passion for technology and programming. I started my journey by learning drag-and-drop at the age of 12 in a software called Plezmo, after that I started coding in MIT App Inventor and its distributions like Niotron, Appzard etc. After that I learnt Java and then I have started making extension for AI2 builders. Along with Java I learnt HTML also and now I am also having some knowledge of css and javascript. Last year I have participated in ATL Marathon and ATL Tinkerprenuer organised by AIM. In ATL Tinkerprenuer I was one of the top 100 participants in all over the India and my position was 21st among 10,000 students. And now I am focussing on Extension and Android Development</p>
     </div>
@@ -23,22 +24,115 @@
     <hr><hr>
     <br><br>
 
-    <span class="autobiography">Extensions</span>
-    <br>
-    <div class="extensionsContent">
+    <span class="heading">Extensions</span>
+    <section class="text-gray-600 body-font" style="height: fit-content;">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap" style="height: 300px;">
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 lg:w-1/2 md:w-full">
+              <div class="flex border-2 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col">
+                <div class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                  <img src="https://res.cloudinary.com/vorbind-chat/image/upload/v1634556769/a75r0jbd8rq7wqphr9hy.png" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24"></img>
+                </div>
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 text-lg title-font font-medium mb-3" style="font-weight: bold;">TicTacToe Extension</h2>
+                  <p class="leading-relaxed text-base">You can use this extension to make TicTacToe game in your application</p>
+                  <a class="mt-3 text-indigo-500 inline-flex items-center" style="cursor: pointer;" id="tictactoe">Learn More
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/2 md:w-full">
+              <div class="flex border-2 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col">
+                <div class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                    <img src="https://res.cloudinary.com/vorbind-chat/image/upload/v1634556769/a75r0jbd8rq7wqphr9hy.png" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24"></img>
+                </div>
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 text-lg title-font font-medium mb-3" style="font-weight: bold;">QRCodeGenerator Extension</h2>
+                  <p class="leading-relaxed text-base">You can  use this extension for making QR code generator application</p>
+                  <a class="mt-3 text-indigo-500 inline-flex items-center" style="cursor: pointer;" id="qrcode">Learn More
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="text-gray-600 body-font" style="height: fit-content;">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap" style="height: 300px;">
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 lg:w-1/2 md:w-full">
+              <div class="flex border-2 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col">
+                <div class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                  <img src="https://res.cloudinary.com/vorbind-chat/image/upload/v1634556769/a75r0jbd8rq7wqphr9hy.png" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24"></img>
+                </div>
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 text-lg title-font font-medium mb-3" style="font-weight: bold;">ColorSeekbar Extension</h2>
+                  <p class="leading-relaxed text-base">You can use this extension to add color seekbar in your application</p>
+                  <a class="mt-3 text-indigo-500 inline-flex items-center" style="cursor: pointer;" id="colorbar">Learn More
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/2 md:w-full">
+              <div class="flex border-2 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col">
+                <div class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                    <img src="https://res.cloudinary.com/vorbind-chat/image/upload/v1634556769/a75r0jbd8rq7wqphr9hy.png" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24"></img>
+                </div>
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 text-lg title-font font-medium mb-3" style="font-weight: bold;">DistanceFinder Extension</h2>
+                  <p class="leading-relaxed text-base">You can use this extension for adding feature to calculating distance between two places </p>
+                  <a class="mt-3 text-indigo-500 inline-flex items-center" style="cursor: pointer;" id="distance">Learn More
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap" style="margin-left: 25%;
+        margin-right: 25%;">
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 lg:w-1/2 md:w-full" style="width: 636px;">
+              <div class="flex border-2 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col">
+                <div class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                  <img src="https://res.cloudinary.com/vorbind-chat/image/upload/v1634556769/a75r0jbd8rq7wqphr9hy.png" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24"></img>
+                </div>
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 text-lg title-font font-medium mb-3" style="font-weight: bold;">TextEditor Extension</h2>
+                  <p class="leading-relaxed text-base">You can customize your text using this extension</p>
+                  <a class="mt-3 text-indigo-500 inline-flex items-center" style="cursor: pointer;" id="text">Learn More
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <span class="extensionName" id="tictactoe">1. TicTacToe Extension <span class="material-icons-outlined">open_in_new</span></span><br>
-        <span class="extensionName" id="text">2. TextEditor Extension <span class="material-icons-outlined">open_in_new</span></span><br>
-        <span class="extensionName" id="qrcode">3. QRCodeGenerator Extension <span class="material-icons-outlined">open_in_new</span></span><br>
-        <span class="extensionName" id="colorbar">4. ColorSeekbar Extension <span class="material-icons-outlined">open_in_new</span></span><br>
-        <span class="extensionName" id="distance">5. DistanceFinder Extension <span class="material-icons-outlined">open_in_new</span></span><br>
+    <br>
+    <hr><hr><br>
     
-    </div>
-
-    <br>
-    <hr><br>
+    <br><br>
+    <hr style="color: #ddd;">
+    
     <div class="footer">
-        <span class="material-icons-outlined">copyright</span><span>     All the copyrights goes to Horizon 2021</span>
+        <span class="material-icons-outlined">copyright</span><span> </span><span>All rights are reserved. 2022</span>
     </div>
 
     <script src="/static/index.js"></script> 

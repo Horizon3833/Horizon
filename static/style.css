@@ -43,7 +43,7 @@ body{
     cursor: default;
 }
 
-.autobiography{
+.heading{
     font-family: 'Roboto Mono';
     font-size: 30px;
     color: #00649e;
@@ -75,8 +75,6 @@ body{
 }
 
 .material-icons-outlined{
-    top: 50%;
-    left: 50%;
     font-family: 'Material Icons Outlined';
 }
 
@@ -86,5 +84,29 @@ body{
     text-align: center;
     padding-top: 25px;
     font-family: 'Noto Sans';
+}
+
+.contact{
+    margin-right: 250px;
+    margin-left: 250px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border: 1px solid #999;
+    text-align: left;
+}
+
+.contactText{
+    font-family: 'Noto Sans';
+}
+
+.contactBtn{
+    font-family: 'Noto Sans';
+    border: 1px solid #75b1d4;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #c2e4f8;
+    border-radius: 5px;
 }
 
