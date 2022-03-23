@@ -4,7 +4,6 @@ var color = document.getElementById('colorbar').addEventListener('click', colorC
 var distance = document.getElementById('distance').addEventListener('click', distanceClick);
 var text = document.getElementById('text').addEventListener('click', textClick);
 
-
 function ticTacToeClick(){
     window.open('https://community.appinventor.mit.edu/t/free-tictactoe-extension/50759?u=horizon', '_blank');
 }

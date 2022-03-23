@@ -103,3 +103,30 @@ body{
     border-radius: 5px;
 }
 
+.navbar-home{
+    margin-right: 15px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.navbar-home::before{
+    margin-right: 5px;
+    font-family: 'Material Icons Outlined';
+    content: "home";
+    font-size: 15px;
+}
+
+.navbar-contact{
+    margin-right: 10px;
+    margin-left: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.navbar-contact::before{
+    margin-right: 5px;
+    font-family: 'Material Icons Outlined';
+    content: "contact_page";
+    font-size: 15px;
+}
+
