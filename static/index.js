@@ -3,6 +3,7 @@ var qrCode = document.getElementById('qrcode').addEventListener('click', qrCodeC
 var color = document.getElementById('colorbar').addEventListener('click', colorClick);
 var distance = document.getElementById('distance').addEventListener('click', distanceClick);
 var text = document.getElementById('text').addEventListener('click', textClick);
+var rubix = document.getElementById("rubixcube").addEventListener('click', rubickClick)
 
 function ticTacToeClick(){
     window.open('https://community.appinventor.mit.edu/t/free-tictactoe-extension/50759?u=horizon', '_blank');
@@ -22,4 +23,8 @@ function distanceClick(){
 
 function textClick(){
     window.open('https://community.appinventor.mit.edu/t/texteditor-extension-free/47313?u=horizon', '_new')
+}
+
+function rubickClick(){
+    window.open('https://play.google.com/store/apps/details?id=io.horizon.rubickscube', '_new')
 }
