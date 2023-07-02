@@ -1,30 +1,56 @@
-var ticTacToe = document.getElementById('tictactoe').addEventListener('click', ticTacToeClick);
-var qrCode = document.getElementById('qrcode').addEventListener('click', qrCodeClick);
-var color = document.getElementById('colorbar').addEventListener('click', colorClick);
-var distance = document.getElementById('distance').addEventListener('click', distanceClick);
-var text = document.getElementById('text').addEventListener('click', textClick);
-var rubix = document.getElementById("rubixcube").addEventListener('click', rubickClick)
+var TxtType = function(el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 2000;
+    this.txt = '';
+    this.tick();
+    this.isDeleting = false;
+};
 
-function ticTacToeClick(){
-    window.open('https://community.appinventor.mit.edu/t/free-tictactoe-extension/50759?u=horizon', '_blank');
-}
+TxtType.prototype.tick = function() {
+    var i = this.loopNum % this.toRotate.length;
+    var fullTxt = this.toRotate[i];
 
-function qrCodeClick(){
-    window.open('https://community.appinventor.mit.edu/t/free-qrcodegenerator-extension/47908?u=horizon', '_new');
-}
+    if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
 
-function colorClick(){
-    window.open('https://community.appinventor.mit.edu/t/free-colorseekbar-extension/49979?u=horizon', '_new')
-}
+    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
-function distanceClick(){
-    window.open('https://community.appinventor.mit.edu/t/free-distancefinder-extension/47664?u=horizon', '_new')
-}
+    var that = this;
+    var delta = 200 - Math.random() * 100;
 
-function textClick(){
-    window.open('https://community.appinventor.mit.edu/t/texteditor-extension-free/47313?u=horizon', '_new')
-}
+    if (this.isDeleting) { delta /= 2; }
 
-function rubickClick(){
-    window.open('https://play.google.com/store/apps/details?id=io.horizon.rubickscube', '_new')
-}
+    if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+    }
+
+    setTimeout(function() {
+    that.tick();
+    }, delta);
+};
+
+window.onload = function() {
+    var elements = document.getElementsByClassName('typewrite');
+    for (var i=0; i<elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-type');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+          new TxtType(elements[i], JSON.parse(toRotate), period);
+        }
+    }
+    // INJECT CSS
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+    document.body.appendChild(css);
+};
