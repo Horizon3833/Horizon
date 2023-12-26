@@ -1,0 +1,21 @@
+name: Update Adsense Content
+
+on:
+  push:
+    branches:
+      - main # Change this to your main branch name
+
+jobs:
+  update-adsense:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Update Ads.txt
+      run: echo "${{ secrets.ADSENSE_TXT_CONTENT }}" > ads.txt
+
+    - name: Update Adsense Publisher ID
+      run: |
+        sed -i "s/YOUR_PUBLISHER_ID/${{ secrets.ADSENSE_PUBLISHER_ID }}/g" index.html
