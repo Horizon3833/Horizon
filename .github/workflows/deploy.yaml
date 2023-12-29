@@ -16,6 +16,8 @@ jobs:
     - name: Update Ads.txt
       run: echo "${{ secrets.ADSENSE_TXT_CONTENT }}" > ads.txt
 
-    - name: Update Adsense Publisher ID
-      run: |
-        sed -i "s/YOUR_PUBLISHER_ID/${{ secrets.ADSENSE_PUBLISHER_ID }}/g" index.html
+    - name: Update Adsense Publisher ID in index.html
+      run: sed -i "s/YOUR_PUBLISHER_ID/${{ secrets.ADSENSE_PUBLISHER_ID }}/g" index.html
+
+    - name: Update Adsense Publisher ID in myprojects.html
+      run: sed -i "s/YOUR_PUBLISHER_ID/${{ secrets.ADSENSE_PUBLISHER_ID }}/g" myprojects.html
