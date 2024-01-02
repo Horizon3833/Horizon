@@ -76,18 +76,33 @@
             <h1>Horizon - Android Developer</h1>
         </div>
     </header>
-
     <div id="language-selector">
         <label for="languages">Select a Programming Language:</label>
-        <select id="languages">
+        <select id="languages" onchange="redirectLearnPage()">
             <option value="">Select Language</option>
-            <option value="python"><a href="/learn_python.html">Python</a></option>
-            <option value="dart"><a href="/learn_dart.html">Dart</a></option>
-            <option value="java"><a href="/learn_java.html">Java</a></option>
-            <option value="kotlin"><a href="/learn_kotlin.html">Kotlin</a></option>
+            <option value="python">Python</option>
+            <option value="dart">Dart</option>
+            <option value="java">Java</option>
+            <option value="kotlin">Kotlin</option>
         </select>
 
         <div id="result"></div>
     </div>
+
+    <script>
+        function redirectLearnPage() {
+            var selectedLanguage = document.getElementById("languages").value;
+            var resultElement = document.getElementById("result");
+
+            if (selectedLanguage) {
+                resultElement.textContent = "Redirecting to the Learn " + selectedLanguage + " page...";
+                setTimeout(function () {
+                    window.location.href = "learn_" + selectedLanguage + ".html";
+                }, 2000); // Redirect after 2 seconds (adjust as needed)
+            } else {
+                resultElement.textContent = ""; // Clear result if no language selected
+            }
+        }
+    </script>
 </body>
 </html>
