@@ -129,3 +129,22 @@ body{
     content: "contact_page";
     font-size: 15px;
 }
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.project-card {
+    background: linear-gradient(45deg, #1c2833, #273746); /* Updated to a darker shade of blue for project cards */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+}
