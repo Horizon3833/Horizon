@@ -34,10 +34,6 @@ jobs:
     - name: Update Adsense Publisher ID in faq.html
       run: sed -i "s/YOUR_PUBLISHER_ID/${{ secrets.ADSENSE_PUBLISHER_ID }}/g" faq.html
 
-    - name: Debug Ads.txt Content
-      run: echo "${{ secrets.ADSENSE_TXT_CONTENT }}" > debug_ads.txt
-
-
     - name: Update Adsense Publisher ID in learn_flutter.html
       run: sed -i "s/YOUR_PUBLISHER_ID/${{ secrets.ADSENSE_PUBLISHER_ID }}/g" learn_flutter.html
 
