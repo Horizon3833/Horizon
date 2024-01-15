@@ -48,9 +48,31 @@ window.onload = function() {
           new TxtType(elements[i], JSON.parse(toRotate), period);
         }
     }
-    // INJECT CSS
     var css = document.createElement("style");
     css.type = "text/css";
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
+document.getElementById('menu-toggle').addEventListener('click', function () {
+    const drawer = document.getElementById('drawer');
+    const body = document.body;
+
+    if (drawer.style.left === '-250px') {
+        drawer.style.left = '0';
+        body.classList.add('drawer-open');
+    } else {
+        drawer.style.left = '-250px';
+        body.classList.remove('drawer-open');
+    }
+});
+
+function closeDrawer(event) {
+    if (document.body.classList.contains('drawer-open') && !document.getElementById('drawer').contains(event.target)) {
+        document.getElementById('drawer').style.left = '-250px';
+        document.body.classList.remove('drawer-open');
+    }
+}
+
+function toggleDrawer() {
+    document.body.classList.toggle('drawer-open');
+}

@@ -5,29 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horizon - FAQ</title>
-    <meta name="google-adsense-account" content="YOUR_PUBLISHER_ID">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css">
     <link rel="icon" href="/static/icon.png">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=YOUR_PUBLISHER_ID"
-     crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/index.js"></script> 
 </head>
 <body>
-    <header class="text-gray-600 body-font bg-gray-900">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <a class="flex title-font font-medium items-center text-white-900 mb-4 md:mb-0" href="/index.html">
-            <img src="/static/icon.png" alt="Circular Logo" class="rounded-full h-10 w-10 border-2 border-white">
-      
-            <span class="ml-3 text-xl" style="color: white;">Horizon - MultiOS Developer</span>
-          </a>
-          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a class="mr-5 hover:text-white" style="color: white;" href="/my_projects.html">My Projects</a>
-            <a class="mr-5 hover:text-white" style="color: white;" href="/learn_flutter.html">Learn Flutter</a>
-            <a class="mr-5 hover:text-white" style="color: white;" href="/blog.html">Blog</a>
-            <a class="mr-5 hover:text-white" style="color: white;" href="/about_me.html">About Me</a>
-            <a class="mr-5 hover:text-white" style="color: white;" href="/contact.html">Contact</a>
-          </nav>
+    <div class="drawer-container">
+        <div id="menu-toggle" class="text-white hover:text-gray-400 focus:outline-none" onclick="toggleDrawer()">
+            ☰ Menu
         </div>
-      </header>
+    
+        <div id="drawer" class="text-gray-600 body-font" onmousedown="closeDrawer(event)">
+            <div class="logo-container">
+                <img src="/static/icon.png" alt="Circular Logo" class="rounded-full h-10 w-10 border-2 border-white">
+                <span>Horizon - MultiOS Developer</span>
+            </div>
+    
+            <div class="nav-links">
+                <a href="/my_projects.html">My Projects</a>
+                <a href="/learn_flutter.html">Learn Flutter</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/faq.html">FAQs</a>
+                <a href="/about_me.html">About Me</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
       <section class="text-gray-600 body-font bg-gray-800" style="background: linear-gradient(135deg, #1c2833, #273746);
         color: #ecf0f1;
         font-family: 'Poppins', sans-serif;
@@ -80,5 +84,10 @@
             </span>
         </div>
       </footer>
+      <script type="text/javascript">
+        var infolinks_pid = 3412882;
+        var infolinks_wsid = 0;
+        </script>
+        <script type="text/javascript" src="http://resources.infolinks.com/js/infolinks_main.js"></script>
 </body>
 </html>

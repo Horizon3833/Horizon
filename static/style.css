@@ -148,3 +148,103 @@ body{
 .project-card:hover {
     transform: scale(1.03);
 }
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: margin-left 0.5s;
+}
+
+.drawer-container {
+    overflow-x: hidden;
+}
+
+#drawer {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: linear-gradient(135deg, #1c2833, #273746); 
+    transition: 0.5s;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow-y: auto; /* Enable scrolling for the content */
+}
+
+#drawer a {
+    text-decoration: none;
+    color: #fff; /* Link text color */
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+#drawer a:hover {
+    color: #55cdfc; /* Change color on hover */
+}
+
+#menu-toggle {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 2;
+    color: #fff; /* Menu toggle text color */
+    transition: color 0.3s;
+}
+
+#menu-toggle:hover {
+    color: #55cdfc; /* Change color on hover */
+}
+
+.drawer-open #drawer {
+    left: 0;
+}
+
+.drawer-open #menu-toggle {
+    left: 265px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0; /* Add margin for spacing */
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.logo-container img {
+    border-radius: 50%;
+    margin-bottom: 10px; /* Add margin below the logo */
+    width: 80px; /* Increase the size of the logo */
+    height: 80px;
+}
+
+.logo-container span {
+    color: white;
+    font-size: 16px;
+}
+
+.nav-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.nav-links a {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px; /* Add rounded corners to links */
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #555; /* Change background color on hover */
+}
+
